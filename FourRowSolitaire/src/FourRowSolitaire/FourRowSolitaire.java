@@ -1,5 +1,3 @@
-//Jesse Pull Test
-
 package FourRowSolitaire;
 
 import java.awt.Desktop;
