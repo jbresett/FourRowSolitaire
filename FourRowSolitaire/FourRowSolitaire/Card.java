@@ -25,7 +25,7 @@ public class Card extends JComponent
     public static final int TWO = 2;
     public static final int THREE = 3;
     public static final int FOUR = 4;
-    public static final int FIVE = 5;  //needed to be 5
+    public static final int FIVE = 5;		//BUG: needed to be 5
     public static final int SIX = 6;
     public static final int SEVEN = 7;
     public static final int EIGHT = 8;
@@ -65,11 +65,11 @@ public class Card extends JComponent
 
             if(deckNumber >= 1 && deckNumber <= ChangeAppearance.NUM_DECKS)
             {
-                cardBack = "images/cardbacks/cardback" + deckNumber + ".png";
+                cardBack = "/cardbacks/cardback" + deckNumber + ".png";
             }
             else
             {
-                cardBack = "images/cardbacks/cardback3.png";
+                cardBack = "/cardbacks/cardback3.png";
             }
 
             initializeCardImageString();
@@ -79,7 +79,7 @@ public class Card extends JComponent
             cardSuit = INVALID_SUIT;
             cardNumber = INVALID_NUMBER;
 
-            cardImageString = "images/invalidcard.png";
+            cardImageString = "/invalidcard.png";
         }
 
         setFaceUp();
@@ -174,8 +174,8 @@ public class Card extends JComponent
 
     private void initializeCardImageString()
     {
-        cardImageString = "images/cardfaces/";
-        cardHighlighted = "images/highlightedfaces/";
+        cardImageString = "/cardfaces/";
+        cardHighlighted = "/highlightedfaces/";
 
         if(cardSuit.equals(SPADES_SUIT))
         {
