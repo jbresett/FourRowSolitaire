@@ -18,7 +18,7 @@ public class CardTest {
   
   @Test
   public void equals() {
-	  //assertEquals(card,card.clone(),"Card not .equal() to it's clone: " + card);
+	  assertEquals(card,card.clone(),"Card not .equal() to it's clone: " + card);
   }
 
   @Test

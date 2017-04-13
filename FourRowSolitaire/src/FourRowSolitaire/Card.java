@@ -253,4 +253,5 @@ public class Card extends JComponent {
 		Card card = new Card(cardSuit, cardNumber, deckNumber, fullCardNumber);
 		return card;
 	}
+	
 }

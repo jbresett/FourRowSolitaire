@@ -3,10 +3,10 @@ package test;
 import org.testng.annotations.Factory;
 import FourRowSolitaire.Card;
 
-public class CardTestFactory {
+public class TestFactory {
 	  
-	@Factory // Generates the entire deck
-	  public Object[] createCards() {
+	  @Factory // Generates the entire deck
+	  public Object[] cardTest() {
 	   Object[] result = new Object[52]; 
 	   for (int i = 1; i <= 13; i++) {
 	      result[i-1] = new CardTest(Card.SPADES_SUIT, i, 1, i);
@@ -16,5 +16,13 @@ public class CardTestFactory {
 	    }
 	    return result;
 	  }
-
+	  
+	  @Factory // Generates the entire deck
+	  public Object[] cardStackTest() {
+	    Object[] result = new Object[1];
+	    result[0] = new CardStackTest();
+	    return result;
+	  }	  
+	  
+	  
 }
