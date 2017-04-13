@@ -6,7 +6,7 @@ public class DealDeckTest {
 
   @Test
   public void DealDeck() {
-    throw new RuntimeException("Test not implemented");
+    throw new RuntimeException(" Test not implemented");
   }
 
   @Test
