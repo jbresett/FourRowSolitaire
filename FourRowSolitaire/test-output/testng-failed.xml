@@ -3,69 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.CardTest">
+      <class name="test.DeckTest">
         <methods>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-          <include name="equals"/>
-        </methods>
-      </class> <!-- test.CardTest -->
-      <class name="test.CardStackTest">
-        <methods>
+          <include name="getDeckLinkedListInteger"/>
           <include name="beforeMethod"/>
-          <include name="getStackint"/>
-          <include name="afterMethod"/>
         </methods>
-      </class> <!-- test.CardStackTest -->
+      </class> <!-- test.DeckTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

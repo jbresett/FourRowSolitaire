@@ -17,12 +17,19 @@ public class TestFactory {
 	    return result;
 	  }
 	  
-	  @Factory // Generates the entire deck
+	  @Factory
 	  public Object[] cardStackTest() {
 	    Object[] result = new Object[1];
 	    result[0] = new CardStackTest();
 	    return result;
 	  }	  
-	  
+
+	  @Factory // Generates the entire deck
+	  public Object[] deckTest() {
+	    Object[] result = new Object[1];
+	    result[0] = new DeckTest();
+	    return result;
+	  }	  
+
 	  
 }
