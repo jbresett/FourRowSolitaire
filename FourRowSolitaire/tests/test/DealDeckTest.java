@@ -1,17 +1,22 @@
 package test;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import FourRowSolitaire.*;
 
 public class DealDeckTest {
-
+	DealDeck deck;
+	DiscardPile pile;
+	
+  @BeforeMethod
+  public void beforeMethod() {
+	  pile = new DiscardPile(3);
+	  deck = new DealDeck(pile, 3);
+	  //deck.
+  }	
+	  
   @Test
   public void DealDeck() {
-    throw new RuntimeException(" Test not implemented");
-  }
-
-  @Test
-  public void getCardAtLocation() {
-    throw new RuntimeException("Test not implemented");
   }
 
   @Test
@@ -56,7 +61,8 @@ public class DealDeckTest {
 
   @Test
   public void setDifficulty() {
-    throw new RuntimeException("Test not implemented");
+    
+	  //throw new RuntimeException("Test not implemented");
   }
 
   @Test

@@ -31,5 +31,12 @@ public class TestFactory {
 	    return result;
 	  }	  
 
+	  @Factory // Generates the entire deck
+	  public Object[] dealDeckTest() {
+	    Object[] result = new Object[1];
+	    result[0] = new DealDeckTest();
+	    return result;
+	  }	  
+
 	  
 }
