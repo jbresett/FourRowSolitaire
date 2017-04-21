@@ -90,7 +90,7 @@ public class CardStack extends JLayeredPane
 
     public boolean isEmpty()
     {
-	return cards.size() == 0;
+    	return cards.size() == 0;
     }
 
     public int length()
@@ -192,6 +192,7 @@ public class CardStack extends JLayeredPane
     {
         CardStack temp = new CardStack();
         int index = search(card);
+        System.out.println(index);
         
         for(int i = 0; i < index; i++)
         {
@@ -202,15 +203,19 @@ public class CardStack extends JLayeredPane
         return temp;
     }
 
-    public CardStack getStack(int numCards)
+    public CardStack getStack(int numCards)	//Undo for stack, fixed by Kailab Bowler
     {
         CardStack temp = new CardStack();
         int index = length() - numCards;
 
-        for(int i = length(); i > index; i--)
+        for(int i = length() - 1; i >= index; i--)
         {
-            temp.push(getCardAtLocation(cards.size() - i - 1).clone());
-            getCardAtLocation(cards.size() - i - 1).highlight();
+            temp.push(getCardAtLocation(i).clone());
+            getCardAtLocation(i).highlight();
+        }
+        for(int i = length() - 1; i >= index; i--)
+        {
+            pop();
         }
 
         return temp;
