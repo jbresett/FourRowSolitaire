@@ -192,7 +192,6 @@ public class CardStack extends JLayeredPane
     {
         CardStack temp = new CardStack();
         int index = search(card);
-        System.out.println(index);
         
         for(int i = 0; i < index; i++)
         {
