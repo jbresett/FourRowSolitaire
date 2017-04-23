@@ -85,7 +85,7 @@ public class Card extends JComponent
         setFaceUp();
     }
 
-    public void highlight()
+	public void highlight()
     {
         highlighted = true;
 
@@ -313,9 +313,42 @@ public class Card extends JComponent
         g.drawImage(image, 0, 0, null);
     }
 
+    @Override
     public Card clone()
     {
         Card card = new Card(cardSuit, cardNumber, deckNumber, fullCardNumber);
         return card;
     }
+
+    @Override
+	public int hashCode() 
+    {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + cardNumber;
+		result = prime * result + ((cardSuit == null) ? 0 : cardSuit.hashCode());
+		result = prime * result + deckNumber;
+		result = prime * result + fullCardNumber;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if ((obj == null) || (getClass() != obj.getClass())) return false;
+		Card other = (Card) obj;
+		if (cardSuit == null) 
+		{
+			if (other.cardSuit != null)
+				return false;
+		}
+		else if (!cardSuit.equals(other.cardSuit)) 
+		{
+			return false;
+		}
+		return (cardNumber == other.cardNumber)	&&
+				(deckNumber == other.deckNumber) &&
+				(fullCardNumber == other.fullCardNumber);
+		
+	}    
 }
