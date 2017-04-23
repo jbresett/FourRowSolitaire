@@ -65,11 +65,11 @@ public class Card extends JComponent
 
             if(deckNumber >= 1 && deckNumber <= ChangeAppearance.NUM_DECKS)
             {
-                cardBack = "images/cardbacks/cardback" + deckNumber + ".png";
+                cardBack = "/images/cardbacks/cardback" + deckNumber + ".png";
             }
             else
             {
-                cardBack = "images/cardbacks/cardback3.png";
+                cardBack = "/images/cardbacks/cardback3.png";
             }
 
             initializeCardImageString();
@@ -79,7 +79,7 @@ public class Card extends JComponent
             cardSuit = INVALID_SUIT;
             cardNumber = INVALID_NUMBER;
 
-            cardImageString = "images/invalidcard.png";
+            cardImageString = "/images/invalidcard.png";
         }
 
         setFaceUp();
@@ -174,8 +174,8 @@ public class Card extends JComponent
 
     private void initializeCardImageString()
     {
-        cardImageString = "images/cardfaces/";
-        cardHighlighted = "images/highlightedfaces/";
+        cardImageString = "/images/cardfaces/";
+        cardHighlighted = "/images/highlightedfaces/";
 
         if(cardSuit.equals(SPADES_SUIT))
         {
