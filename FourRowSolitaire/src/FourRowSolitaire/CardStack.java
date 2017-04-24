@@ -202,17 +202,20 @@ public class CardStack extends JLayeredPane
         return temp;
     }
 
-    public CardStack getStack(int numCards)
+    public CardStack getStack(int numCards)	//Undo for stack, fixed by Kailab Bowler
     {
         CardStack temp = new CardStack();
         int index = length() - numCards;
 
-        for(int i = length(); i > index; i--)
+        for(int i = length() - 1; i >= index; i--)
         {
-            temp.push(getCardAtLocation(cards.size() - i - 1).clone());
-            getCardAtLocation(cards.size() - i - 1).highlight();
+        	temp.push(getCardAtLocation(i).clone());
+        	getCardAtLocation(i).highlight();
         }
-
+        for(int i = length() - 1; i >= index; i--)
+        {
+        	pop();
+        }
         return temp;
     }
 
