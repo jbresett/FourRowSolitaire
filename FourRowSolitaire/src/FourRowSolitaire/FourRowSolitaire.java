@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import javax.swing.*;
 
 /**
- * Class: FourRowSolitaire
+ * Class: FourRowSolitaire Test edit
  * 
  * Description: The FourRowSolitaire class adds a menu to the SolitaireBoard Frame.
  * 
