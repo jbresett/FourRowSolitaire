@@ -1,0 +1,13 @@
+package test;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+/**
+ *
+ * @author then0
+ */
+@RunWith(Suite.class)
+
+@Suite.SuiteClasses({test.AcePileTest.class,test.CardTest.class,test.ColumnTest.class,test.DiscardPileTest.class,test.SingleCellTest.class})
+
+public class FourRowSolitaireTestSuite {}
