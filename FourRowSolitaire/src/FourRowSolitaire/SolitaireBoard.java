@@ -1439,6 +1439,8 @@ public class SolitaireBoard extends JFrame
 
     private class MyMouseListener extends MouseInputAdapter
     {
+    	private Point pressPoint;
+    	
         private boolean hasSelected = false; //If true, the player hasn't completed a move
         private boolean singleCardSelected = false; //If true, the selected stack is only one card
 
@@ -1446,7 +1448,8 @@ public class SolitaireBoard extends JFrame
         private CardStack source;
         private CardStack destination;
         private CardStack temp;
-
+        
+        
         private Card tempCard; //For right clicking discard pile view
         private boolean rightClicked = false; //To prevent clicking cards from the right click view
 
@@ -1481,6 +1484,7 @@ public class SolitaireBoard extends JFrame
 
         public void mousePressed(MouseEvent e)
         {
+        	pressPoint = e.getPoint();
             if(e.getButton() == MouseEvent.BUTTON3 && e.getSource() == discardPile)
             {
                 if(discardPile.getNumViewableCards() == 1 || (discardPile.getNumViewableCards() == 0 && !discardPile.isEmpty()))
@@ -1500,11 +1504,15 @@ public class SolitaireBoard extends JFrame
                 discardPile.repaint();
                 rightClicked = false;
                 tempCard = null;
+            } else if (!e.getPoint().equals(pressPoint)) {
+            	mouseClicked(e);
             }
+
         }
 
         public void mouseClicked(MouseEvent e)
         {
+        	pressPoint = null;
             if(!timer.isRunning() && timerToRun)
             {
                 timer.start();
