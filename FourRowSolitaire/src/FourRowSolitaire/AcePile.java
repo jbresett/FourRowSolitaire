@@ -15,14 +15,14 @@ import java.awt.Point;
  */
 public class AcePile extends CardStack
 {
-    private String suit;
+    private Card.Suit suit;
 
-    public AcePile(String suit)
+    public AcePile(Card.Suit suit)
     {
         this.suit = suit;
     }
 
-    public String getSuit()
+    public Card.Suit getSuit()
     {
         return suit;
     }
@@ -49,7 +49,7 @@ public class AcePile extends CardStack
     }
 
     public boolean isValidMove(Card card)
-    {
+    {    	
         if(isEmpty() && card.getSuit().equals(suit))
         {
             return true;

@@ -124,7 +124,7 @@ public class SolitaireBoard extends JFrame
 
         for(int i = 0; i < 4; i++)
         {
-        	acePiles[i] = new AcePile(Card.Suit.values()[i].toString());
+        	acePiles[i] = new AcePile(Card.Suit.values()[i]);
 
             acePiles[i].addMouseListener(ml);
             //acePiles[i].addMouseMotionListener(ml);
@@ -1476,7 +1476,7 @@ public class SolitaireBoard extends JFrame
             {
                 if(source.peek().getNumber() == Card.Number.ACE)
                 {
-                	int acePile = source.peek().getSuit().acePile();
+                	int acePile = source.peek().getSuit().ordinal();
                     Card card = source.pop();
                     card.unhighlight();
                     acePiles[acePile].push(card);

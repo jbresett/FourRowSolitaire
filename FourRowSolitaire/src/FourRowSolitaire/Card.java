@@ -16,23 +16,25 @@ import javax.swing.JComponent;
 public class Card extends JComponent
 {
 	public enum Suit {
-		SPADES(Color.RED,0), 
-		CLUBS(Color.BLACK,1), 
-		DIAMONDS(Color.BLACK,2), 
-		HEARTS(Color.RED,3), 
-		INVALID(Color.INVALID,-1);
+		SPADES(Color.BLACK), 
+		CLUBS(Color.BLACK), 
+		DIAMONDS(Color.RED), 
+		HEARTS(Color.RED), 
+		INVALID(Color.INVALID);
 
 		private Color color;
-		private int acePile;
 		
-		private Suit(Color color, int acePile) {
+		private Suit(Color color) {
 			this.color = color;
-			this.acePile = acePile;
 		}
 		
 		@Override
 		public String toString() {
 			return name().substring(0, 1) + name().substring(1).toLowerCase();
+		}
+		
+		public static Suit get(int fullNumber) {
+			return values()[(fullNumber-1) / 13];
 		}
 		
 		public static Suit get(String name) {
@@ -41,10 +43,6 @@ public class Card extends JComponent
 			}
 			return INVALID;
 		}		
-		
-		public int acePile() {
-			return acePile;
-		}
 		
 		public String letter() {
 			return name().substring(0, 1).toLowerCase();
@@ -70,6 +68,10 @@ public class Card extends JComponent
 		public String toString() {
 			return name().substring(0, 1) + name().substring(1).toLowerCase();
 		}
+
+		public static Number get(int fullNumber) {
+			return Number.values()[(fullNumber-1) % 13 + 1];
+		}
 		
 		// Returns a card based on the value difference, eg TEN.mod(1) = JACK.
 		public Number mod(int diff) {
@@ -90,7 +92,7 @@ public class Card extends JComponent
 
 	private Suit suit;
 	private Number number;
-    private int fullCardNumber; // 1 - 52
+    private int fullNumber; // 1 - 52
 	
     private int deckNumber;
 
@@ -105,34 +107,31 @@ public class Card extends JComponent
 
     private String location = ""; //To notify the discard pile of moves from the deck
 
-    public Card(Suit suit, int number, int deckNumber, int fullNumber)
+    /**
+     * Generates a card based on it's full number (1-52).
+     * @param fullNumber
+     */
+	public Card(int fullNumber) {
+		this(Suit.get(fullNumber), Number.get(fullNumber), 1);
+	}
+	
+    public Card(Suit suit, Number number, int deckNumber)
     {
-        if((number >= 1 && number <= 13))
+        this.suit = suit;
+        this.number = number;
+        this.deckNumber = deckNumber;
+
+        if(deckNumber >= 1 && deckNumber <= ChangeAppearance.NUM_DECKS)
         {
-            this.suit = suit;
-            this.number = Number.values()[number];
-            fullCardNumber = fullNumber;
-            this.deckNumber = deckNumber;
-
-            if(deckNumber >= 1 && deckNumber <= ChangeAppearance.NUM_DECKS)
-            {
-                cardBack = "/images/cardbacks/cardback" + deckNumber + ".png";
-            }
-            else
-            {
-                cardBack = "/images/cardbacks/cardback3.png";
-            }
-
-            cardImageString = "/images/cardfaces/" + this.suit.letter() + this.number.toString() + ".png";
-            cardHighlighted = "/images/highlightedfaces/" + this.suit.letter() + this.number.toString() + "H.png";
-            
+            cardBack = "/images/cardbacks/cardback" + deckNumber + ".png";
         }
         else
         {
-            this.suit = Suit.INVALID;
-            this.number = Number.INVALID;
-            cardImageString = "/images/invalidcard.png";
+            cardBack = "/images/cardbacks/cardback3.png";
         }
+
+        cardImageString = "/images/cardfaces/" + this.suit.letter() + this.number.toString() + ".png";
+        cardHighlighted = "/images/highlightedfaces/" + this.suit.letter() + this.number.toString() + "H.png";
 
         setFaceUp();
     }
@@ -238,9 +237,10 @@ public class Card extends JComponent
         return suit.getColor();
     }
 
+    
     public int getFullNumber()
     {
-        return fullCardNumber;
+        return suit.ordinal() * 13 + number.ordinal();
     }
 
     public String getSource()
@@ -262,7 +262,7 @@ public class Card extends JComponent
     @Override
     public Card clone()
     {
-        Card card = new Card(suit, number.ordinal(), deckNumber, fullCardNumber);
+        Card card = new Card(suit, number, deckNumber);
         return card;
     }
 
@@ -274,7 +274,7 @@ public class Card extends JComponent
 		result = prime * result + number.hashCode();
 		result = prime * result + suit.hashCode();
 		result = prime * result + deckNumber;
-		result = prime * result + fullCardNumber;
+		result = prime * result + fullNumber;
 		return result;
 	}
 
@@ -291,7 +291,7 @@ public class Card extends JComponent
 		return (number == other.number)	&&
 				(suit == other.suit) &&
 				(deckNumber == other.deckNumber) &&
-				(fullCardNumber == other.fullCardNumber);
+				(fullNumber == other.fullNumber);
 		
 	}    
 }
