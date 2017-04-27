@@ -26,11 +26,13 @@ public class ChangeOptions extends JDialog implements ActionListener
     private JCheckBox winSoundsCheck = new JCheckBox("Win Sounds");
     private int sounds = 0; //0 = off, 1 = on
 
-    private int difficulty = 2; //1 = easy, 2 = medium, 3 = hard
+    private int difficulty = 2; //1 = easy, 2 = medium, 3 = hard, 4 = impossible
 
+    
     private JRadioButton easy = new JRadioButton("Easy");
     private JRadioButton medium = new JRadioButton("Medium", true);
     private JRadioButton hard = new JRadioButton("Hard");
+    private JRadioButton impossible = new JRadioButton("Impossible");
 
     private JButton ok = new JButton("Accept Options");
 
@@ -39,7 +41,7 @@ public class ChangeOptions extends JDialog implements ActionListener
     public ChangeOptions(JFrame parent, int currentDraw, int timer, int animation, int sounds, int difficulty)
     {
         setTitle("Options");
-        setSize(340,190);
+        setSize(360,230);
         setDefaultCloseOperation(JDialog.HIDE_ON_CLOSE);
         setModalityType(JDialog.ModalityType.APPLICATION_MODAL);
         setLocationRelativeTo(parent);
@@ -65,7 +67,7 @@ public class ChangeOptions extends JDialog implements ActionListener
         drawPanel.add(drawOne);
         drawPanel.add(drawThree);
 
-        drawPanel.setMaximumSize(new Dimension(110,80));
+        drawPanel.setMaximumSize(new Dimension(110,100));
         drawPanel.setMinimumSize(drawPanel.getMaximumSize());
         drawPanel.setPreferredSize(drawPanel.getMaximumSize());
 
@@ -84,7 +86,7 @@ public class ChangeOptions extends JDialog implements ActionListener
         checkBoxPanel.add(winAnimationCheck);
         checkBoxPanel.add(winSoundsCheck);
 
-        checkBoxPanel.setMaximumSize(new Dimension(120,80));
+        checkBoxPanel.setMaximumSize(new Dimension(120,100));
         checkBoxPanel.setMinimumSize(checkBoxPanel.getMaximumSize());
         checkBoxPanel.setPreferredSize(checkBoxPanel.getMaximumSize());
 
@@ -117,19 +119,21 @@ public class ChangeOptions extends JDialog implements ActionListener
 
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         buttonPanel.add(ok);
-
+ 
         ButtonGroup difficulties = new ButtonGroup();
         difficulties.add(easy);
         difficulties.add(medium);
         difficulties.add(hard);
+        difficulties.add(impossible);
 
         JPanel difficultyPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         difficultyPanel.setBorder(new TitledBorder("Difficulty"));
         difficultyPanel.add(easy);
         difficultyPanel.add(medium);
         difficultyPanel.add(hard);
+        difficultyPanel.add(impossible);
 
-        difficultyPanel.setMaximumSize(new Dimension(110,80));
+        difficultyPanel.setMaximumSize(new Dimension(130,100));
         difficultyPanel.setMinimumSize(drawPanel.getMaximumSize());
         difficultyPanel.setPreferredSize(drawPanel.getMaximumSize());
 
@@ -140,6 +144,10 @@ public class ChangeOptions extends JDialog implements ActionListener
         else if(difficulty == 3)
         {
             hard.setSelected(true);
+        }
+        else if(difficulty == 4)
+        {
+            impossible.setSelected(true);
         }
         else
         {
@@ -162,6 +170,7 @@ public class ChangeOptions extends JDialog implements ActionListener
         easy.addActionListener(this);
         medium.addActionListener(this);
         hard.addActionListener(this);
+        impossible.addActionListener(this);
         ok.addActionListener(this);
     }
 
@@ -275,6 +284,10 @@ public class ChangeOptions extends JDialog implements ActionListener
         else if(e.getSource() == hard)
         {
             difficulty = 3;
+        }
+        else if(e.getSource() == impossible)
+        {
+            difficulty = 4;
         }
     }
 }
