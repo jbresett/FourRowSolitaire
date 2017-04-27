@@ -1,5 +1,6 @@
 package FourRowSolitaire;
 
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -11,6 +12,7 @@ import javax.swing.border.TitledBorder;
  * Description: The ChangeOptions class manages several game options, such as the draw count (1 or 3).
  * 
  */
+@SuppressWarnings("serial")
 public class ChangeOptions extends JDialog implements ActionListener
 {
     private int drawCount = 1;

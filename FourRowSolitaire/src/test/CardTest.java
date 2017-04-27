@@ -1,6 +1,8 @@
 package test;
 
 import FourRowSolitaire.Card;
+import FourRowSolitaire.Card.Color;
+
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import org.junit.After;
@@ -129,8 +131,9 @@ public class CardTest {
         System.out.println("getNumber");
         Card instance = new Card("Spades",13,0,1);
         int expResult = 13;
-        int result = instance.getNumber();
+        int result = instance.getNumber().ordinal();
         assertEquals(expResult, result);
+
     }
 
     /**
@@ -141,7 +144,7 @@ public class CardTest {
         System.out.println("getSuit");
         Card instance = new Card("Spades",13,0,1);
         String expResult = "Spades";
-        String result = instance.getSuit();
+        String result = instance.getSuit().toString();
         assertEquals(expResult, result);
     }
 
@@ -152,22 +155,11 @@ public class CardTest {
     public void testGetColor() {
         System.out.println("getColor");
         Card instance = new Card("Spades",13,0,1);
-        int expResult = 0;
-        int result = instance.getColor();
+        Color expResult = Color.BLACK;
+        Color result = instance.getColor();
         assertEquals(expResult, result);
     }
 
-    /**
-     * Test of getFullNumber method, of class Card.
-     */
-    @Test
-    public void testGetFullNumber() {
-        System.out.println("getFullNumber");
-        Card instance = new Card("Spades",13,0,5);
-        int expResult = 5;
-        int result = instance.getFullNumber();
-        assertEquals(expResult, result);
-    }
 
     
 }
