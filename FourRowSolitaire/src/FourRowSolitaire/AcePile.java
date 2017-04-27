@@ -29,12 +29,12 @@ public class AcePile extends CardStack
 
     public Card push(Card card)
     {
-        if(isEmpty() && card.getSuit().equals(suit) && card.getNumber() == Card.ACE)
+        if(isEmpty() && card.getSuit().equals(suit) && card.getNumber() == Card.Number.ACE)
         {
             super.push(card);
             return card;
         }
-        else if(card.getSuit().equals(suit) && card.getNumber() == peek().getNumber() + 1)
+        else if(card.getSuit().equals(suit) && card.getNumber() == peek().getNumber().mod(1))
         {
             super.push(card);
             return card;
@@ -54,7 +54,7 @@ public class AcePile extends CardStack
         {
             return true;
         }
-        else if(!isEmpty() && card.getSuit().equals(suit) && card.getNumber() == (peek().getNumber() + 1))
+        else if(!isEmpty() && card.getSuit().equals(suit) && card.getNumber() == (peek().getNumber().mod(1)))
         {
             return true;
         }

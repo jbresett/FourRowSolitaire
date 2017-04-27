@@ -13,12 +13,12 @@ public class Column extends CardStack
 
     public Card push(Card card)
     {
-        if(isEmpty() && card.getNumber() == Card.KING)
+        if(isEmpty() && card.getNumber() == Card.Number.KING)
         {
             super.push(card);
             return card;
         }
-        else if(card.getColor() != peek().getColor() && card.getNumber() == peek().getNumber() - 1)
+        else if(card.getColor() != peek().getColor() && card.getNumber() == peek().getNumber().mod(-1))
         {
             super.push(card);
             return card;
@@ -29,11 +29,11 @@ public class Column extends CardStack
 
     public boolean isValidMove(Card card)
     {
-        if(isEmpty() && card.getNumber() == Card.KING)
+        if(isEmpty() && card.getNumber() == Card.Number.KING)
         {
             return true;
         }
-        else if(!isEmpty() && card.getColor() != peek().getColor() && card.getNumber() == (peek().getNumber() - 1))
+        else if(!isEmpty() && card.getColor() != peek().getColor() && card.getNumber() == (peek().getNumber().mod(-1)))
         {
             return true;
         }

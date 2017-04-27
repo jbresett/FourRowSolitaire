@@ -15,32 +15,83 @@ import javax.swing.JComponent;
  */
 public class Card extends JComponent
 {
-    public static final String SPADES_SUIT = "Spades";
-    public static final String CLUBS_SUIT = "Clubs";
-    public static final String HEARTS_SUIT = "Hearts";
-    public static final String DIAMONDS_SUIT = "Diamonds";
-    public static final String INVALID_SUIT = "Invalid Suit";
+	public enum Suit {
+		SPADES(Color.RED,0), 
+		CLUBS(Color.BLACK,1), 
+		DIAMONDS(Color.BLACK,2), 
+		HEARTS(Color.RED,3), 
+		INVALID(Color.INVALID,-1);
 
-    public static final int ACE = 1;
-    public static final int TWO = 2;
-    public static final int THREE = 3;
-    public static final int FOUR = 4;
-	public static final int FIVE = 5;
-    public static final int SIX = 6;
-    public static final int SEVEN = 7;
-    public static final int EIGHT = 8;
-    public static final int NINE = 9;
-    public static final int TEN = 10;
-    public static final int JACK = 11;
-    public static final int QUEEN = 12;
-    public static final int KING = 13;
-    public static final int INVALID_NUMBER = -1;
+		private Color color;
+		private int acePile;
+		
+		private Suit(Color color, int acePile) {
+			this.color = color;
+			this.acePile = acePile;
+		}
+		
+		@Override
+		public String toString() {
+			return name().substring(0, 1) + name().substring(1).toLowerCase();
+		}
+		
+		public static Suit get(String name) {
+			for (Suit suit: Suit.values()) {
+				if (suit.name().equalsIgnoreCase(name)) return suit;
+			}
+			return INVALID;
+		}		
+		
+		public int acePile() {
+			return acePile;
+		}
+		
+		public String letter() {
+			return name().substring(0, 1).toLowerCase();
+		}
+		
+		public Color getColor() {
+			return color;
+		}
+	}
+	
+	public enum Number {
+		// 0 - 13
+		INVALID, ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING;
 
-    private String cardSuit;
-    private int cardNumber;
+		public static Number get(String name) {
+			for (Number n: Number.values()) {
+				if (n.name().equalsIgnoreCase(name)) return n;
+			}
+			return INVALID;
+		}
+		
+		@Override
+		public String toString() {
+			return name().substring(0, 1) + name().substring(1).toLowerCase();
+		}
+		
+		// Returns a card based on the value difference, eg TEN.mod(1) = JACK.
+		public Number mod(int diff) {
+			int index = ordinal() + diff;
+			if (index < 0 || index >= Number.values().length) return Number.INVALID;
+			return Number.values()[index];
+		}
+	}
+	
+	public enum Color {
+		BLACK, RED, INVALID;
+			
+		@Override
+		public String toString() {
+			return name().substring(0, 1) + name().substring(1).toLowerCase();
+		}		
+	}
+
+	private Suit suit;
+	private Number number;
     private int fullCardNumber; // 1 - 52
-    private int cardColor; //0 = black, red = 1
-
+	
     private int deckNumber;
 
     private BufferedImage image; //Takes either card back or front
@@ -54,12 +105,12 @@ public class Card extends JComponent
 
     private String location = ""; //To notify the discard pile of moves from the deck
 
-    public Card(String suit, int number, int deckNumber, int fullNumber)
+    public Card(Suit suit, int number, int deckNumber, int fullNumber)
     {
-        if(isValidSuit(suit) && (number >= 1 && number <= 13))
+        if((number >= 1 && number <= 13))
         {
-            cardSuit = suit;
-            cardNumber = number;
+            this.suit = suit;
+            this.number = Number.values()[number];
             fullCardNumber = fullNumber;
             this.deckNumber = deckNumber;
 
@@ -72,13 +123,14 @@ public class Card extends JComponent
                 cardBack = "/images/cardbacks/cardback3.png";
             }
 
-            initializeCardImageString();
+            cardImageString = "/images/cardfaces/" + this.suit.letter() + this.number.toString() + ".png";
+            cardHighlighted = "/images/highlightedfaces/" + this.suit.letter() + this.number.toString() + "H.png";
+            
         }
         else
         {
-            cardSuit = INVALID_SUIT;
-            cardNumber = INVALID_NUMBER;
-
+            this.suit = Suit.INVALID;
+            this.number = Number.INVALID;
             cardImageString = "/images/invalidcard.png";
         }
 
@@ -163,113 +215,7 @@ public class Card extends JComponent
 
     public boolean isValidSuit(String suit)
     {
-        if(suit.equals(SPADES_SUIT) || suit.equals(DIAMONDS_SUIT) ||
-                suit.equals(HEARTS_SUIT) || suit.equals(CLUBS_SUIT))
-        {
-            return true;
-        }
-
-        return false;
-    }
-
-    private void initializeCardImageString()
-    {
-        cardImageString = "/images/cardfaces/";
-        cardHighlighted = "/images/highlightedfaces/";
-
-        if(cardSuit.equals(SPADES_SUIT))
-        {
-            cardImageString += "s";
-            cardHighlighted += "s";
-            cardColor = 0;
-        }
-        else if(cardSuit.equals(CLUBS_SUIT))
-        {
-            cardImageString += "c";
-            cardHighlighted += "c";
-            cardColor = 0;
-        }
-        else if(cardSuit.equals(DIAMONDS_SUIT))
-        {
-            cardImageString += "d";
-            cardHighlighted += "d";
-            cardColor = 1;
-        }
-        else //if(cardSuit.equals(HEARTS_SUIT))
-        {
-            cardImageString += "h";
-            cardHighlighted += "h";
-            cardColor = 1;
-        }
-
-        if(cardNumber == ACE)
-        {
-            cardImageString += "Ace";
-            cardHighlighted += "Ace";
-        }
-        else if(cardNumber == TWO)
-        {
-            cardImageString += "Two";
-            cardHighlighted += "Two";
-        }
-        else if(cardNumber == THREE)
-        {
-            cardImageString += "Three";
-            cardHighlighted += "Three";
-        }
-        else if(cardNumber == FOUR)
-        {
-            cardImageString += "Four";
-            cardHighlighted += "Four";
-        }
-        else if(cardNumber == FIVE)
-        {
-            cardImageString += "Five";
-            cardHighlighted += "Five";
-        }
-        else if(cardNumber == SIX)
-        {
-            cardImageString += "Six";
-            cardHighlighted += "Six";
-        }
-        else if(cardNumber == SEVEN)
-        {
-            cardImageString += "Seven";
-            cardHighlighted += "Seven";
-        }
-        else if(cardNumber == EIGHT)
-        {
-            cardImageString += "Eight";
-            cardHighlighted += "Eight";
-        }
-        else if(cardNumber == NINE)
-        {
-            cardImageString += "Nine";
-            cardHighlighted += "Nine";
-        }
-        else if(cardNumber == TEN)
-        {
-            cardImageString += "Ten";
-            cardHighlighted += "Ten";
-        }
-        else if(cardNumber == JACK)
-        {
-            cardImageString += "Jack";
-            cardHighlighted += "Jack";
-        }
-        else if(cardNumber == QUEEN)
-        {
-            cardImageString += "Queen";
-            cardHighlighted += "Queen";
-        }
-        else //if(cardNumber == KING)
-        {
-            cardImageString += "King";
-            cardHighlighted += "King";
-        }
-
-        cardImageString += ".png";
-        cardHighlighted += "H.png";
+    	return (Suit.get(suit) != Suit.INVALID);
     }
 
     public BufferedImage getImage()
@@ -277,19 +223,19 @@ public class Card extends JComponent
         return image;
     }
 
-    public int getNumber()
+    public Number getNumber()
     {
-        return cardNumber;
+        return number;
     }
 
-    public String getSuit()
+    public Suit getSuit()
     {
-        return cardSuit;
+        return suit;
     }
 
-    public int getColor()
+    public Color getColor()
     {
-        return cardColor;
+        return suit.getColor();
     }
 
     public int getFullNumber()
@@ -316,7 +262,7 @@ public class Card extends JComponent
     @Override
     public Card clone()
     {
-        Card card = new Card(cardSuit, cardNumber, deckNumber, fullCardNumber);
+        Card card = new Card(suit, number.ordinal(), deckNumber, fullCardNumber);
         return card;
     }
 
@@ -325,28 +271,25 @@ public class Card extends JComponent
     {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + cardNumber;
-		result = prime * result + ((cardSuit == null) ? 0 : cardSuit.hashCode());
+		result = prime * result + number.hashCode();
+		result = prime * result + suit.hashCode();
 		result = prime * result + deckNumber;
 		result = prime * result + fullCardNumber;
 		return result;
 	}
 
+    @Override
+    public String toString() {
+    	return number + " of " + suit;
+    }
+    
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj) return true;
 		if ((obj == null) || (getClass() != obj.getClass())) return false;
 		Card other = (Card) obj;
-		if (cardSuit == null) 
-		{
-			if (other.cardSuit != null)
-				return false;
-		}
-		else if (!cardSuit.equals(other.cardSuit)) 
-		{
-			return false;
-		}
-		return (cardNumber == other.cardNumber)	&&
+		return (number == other.number)	&&
+				(suit == other.suit) &&
 				(deckNumber == other.deckNumber) &&
 				(fullCardNumber == other.fullCardNumber);
 		

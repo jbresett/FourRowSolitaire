@@ -124,15 +124,7 @@ public class SolitaireBoard extends JFrame
 
         for(int i = 0; i < 4; i++)
         {
-            switch(i)
-            {
-                case 0: acePiles[i] = new AcePile(Card.SPADES_SUIT); break;
-                case 1: acePiles[i] = new AcePile(Card.CLUBS_SUIT); break;
-                case 2: acePiles[i] = new AcePile(Card.DIAMONDS_SUIT); break;
-                case 3: acePiles[i] = new AcePile(Card.HEARTS_SUIT); break;
-
-                default: ; break;
-            }
+        	acePiles[i] = new AcePile(Card.Suit.values()[i].toString());
 
             acePiles[i].addMouseListener(ml);
             //acePiles[i].addMouseMotionListener(ml);
@@ -1318,57 +1310,14 @@ public class SolitaireBoard extends JFrame
                             Card card = temp.getCardAtLocation(k);
 
                             if(((destination instanceof AcePile) && card.getSuit().equals(((AcePile)destination).getSuit())
-                                    && card.getNumber() == (destination.peek().getNumber() + 1) && k == 0) ||
+                                    && card.getNumber() == (destination.peek().getNumber().mod(1)) && k == 0) ||
                                     (!(destination instanceof AcePile) && card.getColor() != destination.peek().getColor()
-                                    && card.getNumber() == destination.peek().getNumber() - 1))
+                                    && card.getNumber() == destination.peek().getNumber().mod(-1)))
                             {
-                                String hintString = "Move the ";
 
-                                if(card.getNumber() == 11)
-                                {
-                                    hintString += "Jack";
-                                }
-                                else if(card.getNumber() == 12)
-                                {
-                                    hintString += "Queen";
-                                }
-                                else if(card.getNumber() == 13)
-                                {
-                                    hintString += "King";
-                                }
-                                else if(card.getNumber() == 1)
-                                {
-                                    hintString += "Ace";
-                                }
-                                else
-                                {
-                                    hintString += card.getNumber();
-                                }
-
-                                hintString += " of " + card.getSuit() + " in " + sourceString + " to the ";
-
-                                if(destination.peek().getNumber() == 11)
-                                {
-                                    hintString += "Jack";
-                                }
-                                else if(destination.peek().getNumber() == 12)
-                                {
-                                    hintString += "Queen";
-                                }
-                                else if(destination.peek().getNumber() == 13)
-                                {
-                                    hintString += "King";
-                                }
-                                else if(destination.peek().getNumber() == 1)
-                                {
-                                    hintString += "Ace";
-                                }
-                                else
-                                {
-                                    hintString += destination.peek().getNumber();
-                                }
-
-                                hintString += " of " + destination.peek().getSuit() + " in " + destinationString;
+                            	String hintString = "Move the " + card +
+                                	 " in " + sourceString + " to the " +
+                                	 destination.peek()	+ " in " + destinationString;
 
                                 hints.add(hintString);
                                 break; //Once a move is found from a source to destination, stop looking for more
@@ -1376,13 +1325,13 @@ public class SolitaireBoard extends JFrame
                         }
                     }
                     else if(destination != null && destination != source && (destination instanceof Column)
-                            && destination.isEmpty() && source.getBottom().getNumber() != 13)
+                            && destination.isEmpty() && source.getBottom().getNumber() != Card.Number.KING)
                     {
                         for(int k = 0; k < temp.length(); k++)
                         {
                             Card card = temp.getCardAtLocation(k);
 
-                            if(card.getNumber() == 13)
+                            if(card.getNumber() == Card.Number.KING)
                             {
                                 String hintString = "Move the King of " + card.getSuit() + " in " + sourceString
                                         + " to the empty " + destinationString;
@@ -1397,7 +1346,7 @@ public class SolitaireBoard extends JFrame
                     {
                         Card card = temp.peek();
 
-                        if(card.getNumber() == 1 && card.getSuit().equals(((AcePile)destination).getSuit()))
+                        if(card.getNumber() == Card.Number.ACE && card.getSuit().equals(((AcePile)destination).getSuit()))
                         {
                             String hintString = "Move the Ace of " + card.getSuit() + " in " + sourceString
                                     + " to " + destinationString;
@@ -1457,7 +1406,7 @@ public class SolitaireBoard extends JFrame
         {
             for(int i = 0; i < 4; i++)
             {
-                if(acePiles[i].isEmpty() || acePiles[i].peek().getNumber() != Card.KING)
+                if(acePiles[i].isEmpty() || acePiles[i].peek().getNumber() != Card.Number.KING)
                 {
                     return;
                 }
@@ -1525,36 +1474,13 @@ public class SolitaireBoard extends JFrame
 
             else if(e.getClickCount() == 2 && hasSelected && singleCardSelected)
             {
-                if(source.peek().getNumber() == Card.ACE)
+                if(source.peek().getNumber() == Card.Number.ACE)
                 {
-                    if(source.peek().getSuit().equals(Card.SPADES_SUIT))
-                    {
-                        Card card = source.pop();
-                        card.unhighlight();
-                        acePiles[0].push(card);
-                        destinationList.add(acePiles[0]);
-                    }
-                    else if(source.peek().getSuit().equals(Card.CLUBS_SUIT))
-                    {
-                        Card card = source.pop();
-                        card.unhighlight();
-                        acePiles[1].push(card);
-                        destinationList.add(acePiles[1]);
-                    }
-                    else if(source.peek().getSuit().equals(Card.DIAMONDS_SUIT))
-                    {
-                        Card card = source.pop();
-                        card.unhighlight();
-                        acePiles[2].push(card);
-                        destinationList.add(acePiles[2]);
-                    }
-                    else //if(source.peek().getSuit().equals(Card.HEARTS_SUIT))
-                    {
-                        Card card = source.pop();
-                        card.unhighlight();
-                        acePiles[3].push(card);
-                        destinationList.add(acePiles[3]);
-                    }
+                	int acePile = source.peek().getSuit().acePile();
+                    Card card = source.pop();
+                    card.unhighlight();
+                    acePiles[acePile].push(card);
+                    destinationList.add(acePiles[acePile]);
 
                     hasSelected = false;
                     source.repaint();
@@ -1565,7 +1491,7 @@ public class SolitaireBoard extends JFrame
                 for(int i = 0; i < 4; i++)
                 {
                     if(!acePiles[i].isEmpty() && source.peek().getSuit().equals(acePiles[i].peek().getSuit()) &&
-                            source.peek().getNumber() == (acePiles[i].peek().getNumber() + 1))
+                            source.peek().getNumber() == (acePiles[i].peek().getNumber().mod(1)))
                     {
                         Card card = source.pop();
                         card.unhighlight();
@@ -1577,7 +1503,7 @@ public class SolitaireBoard extends JFrame
                         source.repaint();
                         repaint();
 
-                        if(card.getNumber() == Card.KING)
+                        if(card.getNumber() == Card.Number.KING)
                         {
                             checkWin();
                         }
@@ -1721,7 +1647,7 @@ public class SolitaireBoard extends JFrame
                         //If move is valid, add destination info for undo
                         destinationList.add(destination);
                         
-                        if(destination instanceof AcePile && clickedCard.getNumber() == Card.KING)
+                        if(destination instanceof AcePile && clickedCard.getNumber() == Card.Number.KING)
                         {
                             repaint();
                             checkWin();
