@@ -4,7 +4,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 /**
  *
- * @author then0
+ * @author Elizabeth Layman
  */
 @RunWith(Suite.class)
 

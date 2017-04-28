@@ -114,6 +114,7 @@ public class Card extends JComponent
 	public Card(int fullNumber) {
 		this(Suit.get(fullNumber), Number.get(fullNumber), 1);
 	}
+
 	
     public Card(Suit suit, Number number, int deckNumber)
     {
@@ -135,6 +136,12 @@ public class Card extends JComponent
 
         setFaceUp();
     }
+
+    // Old constructor for tests.
+	public Card(String string, int number, int deckNumber, int drop) {
+		this(Suit.get(string), Number.values()[number], deckNumber);
+	}
+
 
 	public void highlight()
     {

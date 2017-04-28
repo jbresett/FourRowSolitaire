@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author then0
+ * @author Elizabeth Layman
  */
 public class DiscardPileTest {
     

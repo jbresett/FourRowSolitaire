@@ -432,7 +432,8 @@ public class FourRowSolitaire extends SolitaireBoard implements ActionListener
             "%\n\nBest Streak: " + winStreak1h + "\t\t\tBest Streak: " + winStreak3h + "\n" +
             "Worst Streak: " + lossStreak1h + "\t\tWorst Streak: " + lossStreak3h + "\n" +
             "Current Streak: " + currentStreak1h + "\t\tCurrent Streak: " + currentStreak3h);
-
+            
+            display.setEditable(false);
             display.setOpaque(false);
             display.setBorder(null);
             display.setFont(UIManager.getFont("Label.font"));

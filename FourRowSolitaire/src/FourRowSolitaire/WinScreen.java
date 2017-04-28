@@ -1,6 +1,7 @@
 
 package FourRowSolitaire;
 
+import java.awt.Color;
 //import java.awt.Dialog;
 import java.awt.event.*;
 import java.io.File;
@@ -16,20 +17,16 @@ import javax.swing.event.MouseInputAdapter;
  * Description: The WinScreen class manages the win animation and sounds window.
  * 
  */
-public class WinScreen extends JFrame
+public class WinScreen extends JDialog
 {
     SoundThread sound = null;
 
     public WinScreen(int animation, int sounds)
     {
         setUndecorated(true);
-        //setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
         setFocusable(true);
-        
-        /*For JDialog instead of JFrame, but the mouse listener
-            doesn't work with JDialog for some reason.
-        setModalityType(Dialog.ModalityType.DOCUMENT_MODAL);*/
+        setModalityType(JDialog.ModalityType.DOCUMENT_MODAL);
 
         if(sounds == 1)
         {
@@ -48,13 +45,14 @@ public class WinScreen extends JFrame
             setLocationRelativeTo(null);
         }
         else
+        	
         {
-            this.setLocation(0,0);
-            add(new JLabel("Click Here to Stop Music"));
+            setLocationRelativeTo(null);           
+            JLabel closeLabel = new JLabel("Click Here to Stop Music");
+            closeLabel.setHorizontalAlignment(JLabel.CENTER);
+          
+            add(closeLabel);
         }
-
-        
-        setVisible(true);
 
         addMouseListener(new MouseInputAdapter()
         {
@@ -76,6 +74,8 @@ public class WinScreen extends JFrame
                 WinScreen.this.requestFocus();
             }
         });
+        
+        setVisible(true);
     }
 
     private class SoundThread extends Thread
