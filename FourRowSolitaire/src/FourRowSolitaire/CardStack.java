@@ -24,6 +24,10 @@ public class CardStack extends JLayeredPane
         card.setBounds(0, 0, 72, 96);
         add(card, 0);
     }
+    
+    protected Vector<Card> getCards() {
+    	return cards;
+    }
 
     public void addStack(CardStack stack)
     {
@@ -235,49 +239,11 @@ public class CardStack extends JLayeredPane
 
     public CardStack getAvailableCards()
     {
-        if(!isEmpty() && (this instanceof Column))
-        {
-            CardStack temp = new CardStack();
-            boolean cardsMatch = true;
-            int index = length() - 1;
-
-            temp.addCard(cards.get(index));
-
-            do
-            {
-                index--;
-
-                if(index >= 0)
-                {
-                    Card card = cards.get(index);
-
-                    if(card.getColor() != temp.peek().getColor() && card.getNumber() == temp.peek().getNumber().mod(1))
-                    {
-                        temp.addCard(card);
-                    }
-                    else
-                    {
-                        cardsMatch = false;
-                    }
-                }
-                else
-                {
-                    cardsMatch = false;
-                }
-
-            } while(cardsMatch);
-
-            return temp;
-        }
-        else if(!isEmpty()) //is the discardPile or single cell
-        {
-            CardStack temp = new CardStack();
-            temp.addCard(peek());
-
-            return temp;
-        }
-
-        return null; //for deck and ace piles
+    	if (isEmpty()) return null;  //for deck and ace piles
+    	
+    	CardStack temp = new CardStack();
+        temp.addCard(peek());
+        return temp;
     }
 
     public void paint(Graphics g)

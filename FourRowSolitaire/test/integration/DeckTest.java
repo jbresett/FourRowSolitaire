@@ -1,9 +1,8 @@
-package testNG;
+package test.integration;
 
 import org.testng.annotations.Test;
 
 import FourRowSolitaire.Card;
-import FourRowSolitaire.CardStack;
 import FourRowSolitaire.Deck;
 
 import static org.testng.Assert.assertEquals;
@@ -44,7 +43,7 @@ public class DeckTest {
   @Test
   public void getDeckLinkedListInteger() {
     // Linked List
-	  LinkedList<Integer> cardIds = new LinkedList<>(); // A,2, and 3 of Hearts
+	  LinkedList<Integer> cardIds = new LinkedList<Integer>(); // A,2, and 3 of Hearts
 	  LinkedList<Card> cardList;
 	  cardIds.add(39);
 	  cardIds.add(40);

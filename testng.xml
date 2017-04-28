@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="test.integration.TestFactory"/>
+      <class name="test.ColumnTest"/>
+      <class name="test.SingleCellTest"/>
+      <class name="test.CardTest"/>
+      <class name="test.DiscardPileTest"/>
+      <class name="test.AcePileTest"/>
+    </classes>
+   </test> <!-- Test -->
+</suite> <!-- Suite -->
