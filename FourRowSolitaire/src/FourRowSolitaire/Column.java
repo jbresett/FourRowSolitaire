@@ -11,6 +11,44 @@ public class Column extends CardStack
 {
     public Column() {}
 
+    @Override
+    public CardStack getAvailableCards() {
+    	if (isEmpty()) return null;
+
+        CardStack temp = new CardStack();
+        boolean cardsMatch = true;
+        int index = length() - 1;
+
+        temp.addCard(getCards().get(index));
+
+        do
+        {
+            index--;
+
+            if(index >= 0)
+            {
+                Card card = getCards().get(index);
+
+                if(card.getColor() != temp.peek().getColor() && card.getNumber() == temp.peek().getNumber().mod(1))
+                {
+                    temp.addCard(card);
+                }
+                else
+                {
+                    cardsMatch = false;
+                }
+            }
+            else
+            {
+                cardsMatch = false;
+            }
+
+        } while(cardsMatch);
+
+        return temp;
+
+    }
+    
     public Card push(Card card)
     {
         if(isEmpty() && card.getNumber() == Card.Number.KING)

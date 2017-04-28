@@ -1,15 +1,15 @@
-package test.testNG;
+package test.integration;
 
 import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 import FourRowSolitaire.Card;
 
-public class CardTest {
+public class IntCardTest {
   private Card.Suit suit;
   private int cardNumber, fullCardNumber;
   private Card card;
   
-  public CardTest(int fullCardNumber) {
+  public IntCardTest(int fullCardNumber) {
 	  this.card = new Card(fullCardNumber);
 	  this.suit = card.getSuit();
 	  this.cardNumber = card.getNumber().ordinal();

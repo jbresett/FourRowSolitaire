@@ -1,6 +1,8 @@
-package test.testNG;
+package test.integration;
 
 import org.testng.annotations.Factory;
+
+import test.integration.IntCardTest;
 
 public class TestFactory {
 	  
@@ -8,7 +10,7 @@ public class TestFactory {
 	  public Object[] cardTest() {
 	   Object[] result = new Object[52]; 
 	   for (int i = 1; i <= 52; i++) {
-	      result[i-1] = new CardTest(i);
+	      result[i-1] = new IntCardTest(i);
 	    }
 	   return result;
 	  }
@@ -33,13 +35,7 @@ public class TestFactory {
 	    //result[0] = new DealDeckTest();
 	    return result;
 	  }
-	  
-	  //@Factory // Unit Test Integration
-	  public Object[] unitTests() {
-	    Object[] result = new Object[0];
-	    //result[0] = new FourRowSolitaireTestSuite();
-	    return result;
-	  }	  
+
 
 	  
 }
