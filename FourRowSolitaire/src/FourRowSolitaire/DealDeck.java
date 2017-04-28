@@ -1,6 +1,7 @@
 
 package FourRowSolitaire;
 
+
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Point;
@@ -13,20 +14,30 @@ import javax.swing.JOptionPane;
  * Description: The DealDeck class manages the leftover cards after the deal out.
  *
  */
+@SuppressWarnings("serial")
 public class DealDeck extends CardStack
 {
     private DiscardPile discardPile;
     private int numTimesThroughDeck = 1;
 
     private int drawCount = 1;
-    private int difficulty = 2; //1, 2, or 3
+    @SuppressWarnings("unused")
+	private int difficulty = 2; //1, 2, 3, 4
 
-    private static final int DRAW_ONE_THROUGH_LIMIT = 2;
+    /*
+     * Enhancement: Impossible Mode
+     * Created By: Elizabeth Layman
+     * Added impossible mode to the deal deck class
+     * Fixed the hard, normal, and easy modes as well 
+     * so they actually fit their name
+     */
+    private static final int DRAW_ONE_THROUGH_LIMIT = 1;
     private static final int DRAW_THREE_THROUGH_LIMIT = 3;
 
-    private static final int EASY_THROUGH_LIMIT = 3; //Number of deck throughs for each difficulty
-    private static final int MEDIUM_THROUGH_LIMIT = 2; //Three card draw adds 1 to each
-    private static final int HARD_THROUGH_LIMIT = 1;
+    private static final int EASY_THROUGH_LIMIT = 8; //Number of deck cycles for each difficulty
+    private static final int MEDIUM_THROUGH_LIMIT = 6; //Three card draw adds 1 to each
+    private static final int HARD_THROUGH_LIMIT = 4;
+    private static final int IMPOSSIBLE_THROUGH_LIMIT = 1;
 
     private int deckThroughLimit;
     private boolean redealable = true;
@@ -36,13 +47,13 @@ public class DealDeck extends CardStack
         discardPile = discard;
         this.drawCount = drawCount;
 
-        if(drawCount == 3)
+        if (drawCount == 3)
         {
             deckThroughLimit = DRAW_THREE_THROUGH_LIMIT;
         }
-        else
+        else 
         {
-            deckThroughLimit = DRAW_ONE_THROUGH_LIMIT;
+        	deckThroughLimit = DRAW_ONE_THROUGH_LIMIT;
         }
 
         discard.setDrawCount(drawCount);
@@ -103,6 +114,10 @@ public class DealDeck extends CardStack
         else if(difficulty == 3)
         {
             deckThroughLimit = HARD_THROUGH_LIMIT;
+        }
+        else if(difficulty == 4)
+        {
+            deckThroughLimit = IMPOSSIBLE_THROUGH_LIMIT;
         }
         else //if(difficulty == 2)
         {

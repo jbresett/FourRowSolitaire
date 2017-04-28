@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author then0
+ * @author Elizabeth Layman
  */
 public class AcePileTest {
     
@@ -68,7 +68,7 @@ public class AcePileTest {
     public void testIsValidMove_Card() {
         System.out.println("isValidMove");
         Card card = new Card(1);
-        AcePile instance = new AcePile("Spades");
+        AcePile instance = new AcePile(Card.Suit.SPADES);
         boolean expResult = true;
         boolean result = instance.isValidMove(card);
         assertEquals(expResult, result);
