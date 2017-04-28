@@ -1,4 +1,4 @@
-package test;
+package testNG;
 
 import org.testng.annotations.Test;
 
@@ -33,11 +33,8 @@ public class CardStackTest {
   @BeforeMethod
   public void beforeMethod() {
 	  cards = new Card[52];
-	   for (int i = 1; i <= 13; i++) {
-		   cards[i-1] = new Card(Card.SPADES_SUIT, i, 1, i);
-		      cards[i+12] = new Card(Card.CLUBS_SUIT, i, 1, i + 13);
-		      cards[i+25] = new Card(Card.DIAMONDS_SUIT, i, 1, i + 26);
-		      cards[i+38] = new Card(Card.HEARTS_SUIT, i, 1, i + 39);
+	   for (int i = 1; i <= 52; i++) {
+		   cards[i-1] = new Card(i);
 	   }
 	   
 	   stacks = new CardStack[MAX_STACK];

@@ -3,12 +3,62 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.DeckTest">
+      <class name="testNG.CardTest">
         <methods>
-          <include name="getDeckLinkedListInteger"/>
-          <include name="beforeMethod"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
+          <include name="getNumber"/>
         </methods>
-      </class> <!-- test.DeckTest -->
+      </class> <!-- testNG.CardTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

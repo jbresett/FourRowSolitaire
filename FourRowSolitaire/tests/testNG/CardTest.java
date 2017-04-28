@@ -1,19 +1,19 @@
-package test;
+package testNG;
 
 import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 import FourRowSolitaire.Card;
 
 public class CardTest {
-  private String suit;
+  private Card.Suit suit;
   private int cardNumber, fullCardNumber;
   private Card card;
   
-  public CardTest(String suit, int cardNumber, int deckNumber, int fullCardNumber) {
-	  this.suit = suit;
-	  this.cardNumber = cardNumber;
+  public CardTest(int fullCardNumber) {
+	  this.card = new Card(fullCardNumber);
+	  this.suit = card.getSuit();
+	  this.cardNumber = card.getNumber().ordinal();
 	  this.fullCardNumber = fullCardNumber;
-	  this.card = new Card(suit, cardNumber, deckNumber, fullCardNumber);
   }
   
   @Test
@@ -23,16 +23,16 @@ public class CardTest {
 
   @Test
   public void color() {
-	  int color;
+	  Card.Color color;
 
 	  switch (suit) {
-	  case Card.DIAMONDS_SUIT:
-	  case Card.HEARTS_SUIT:
-	  	color = 1; // Red
+	  case DIAMONDS:
+	  case HEARTS:
+	  	color = Card.Color.RED; // Red
 	    break;
-	  case Card.CLUBS_SUIT:
-	  case Card.SPADES_SUIT:
-		color = 0; // black
+	  case CLUBS:
+	  case SPADES:
+		color = Card.Color.BLACK; // black
 		break;
 	  default:
 		 fail("Card suit is invalid.");
@@ -43,7 +43,7 @@ public class CardTest {
 
   @Test
   public void getNumber() {
-	  assertEquals(card.getNumber(), cardNumber);
+	  assertEquals(card.getNumber().ordinal(), cardNumber);
 	  assertEquals(card.getFullNumber(), fullCardNumber);
   }
   
@@ -70,7 +70,7 @@ public class CardTest {
 
   @Test
   public void isValidSuit() {
-	assertTrue(card.isValidSuit(card.getSuit()),"Invalid Suit: " + cardNumber + " of " + suit + "(ID# " + fullCardNumber + ")");	  
+	assertTrue(card.isValidSuit(card.getSuit().toString()),"Invalid Suit: " + cardNumber + " of " + suit + "(ID# " + fullCardNumber + ")");	  
 	assertTrue(!card.isValidSuit("Insert Random Text"));
   }
 

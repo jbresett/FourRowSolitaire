@@ -1,37 +1,1677 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="382" passed="382">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6855" started-at="2017-04-13T23:28:27Z" finished-at="2017-04-13T23:28:34Z">
+  <suite name="Default suite" duration-ms="12052" started-at="2017-04-27T19:48:19Z" finished-at="2017-04-27T19:48:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6855" started-at="2017-04-13T23:28:27Z" finished-at="2017-04-13T23:28:34Z">
-      <class name="test.DeckTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.DeckTest@4de8b406]" name="beforeMethod" is-config="true" duration-ms="3289" started-at="2017-04-13T16:28:27Z" finished-at="2017-04-13T16:28:31Z">
+    <test name="Default test" duration-ms="12052" started-at="2017-04-27T19:48:19Z" finished-at="2017-04-27T19:48:31Z">
+      <class name="testNG.CardStackTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="156" started-at="2017-04-27T12:48:19Z" finished-at="2017-04-27T12:48:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getDeck()[pri:0, instance:test.DeckTest@4de8b406]" name="getDeck" duration-ms="20" started-at="2017-04-13T16:28:31Z" finished-at="2017-04-13T16:28:31Z">
+        <test-method status="PASS" signature="addCard()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="addCard" duration-ms="192" started-at="2017-04-27T12:48:19Z" finished-at="2017-04-27T12:48:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCard -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-27T12:48:19Z" finished-at="2017-04-27T12:48:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="18" started-at="2017-04-27T12:48:19Z" finished-at="2017-04-27T12:48:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="addStack()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="addStack" duration-ms="3" started-at="2017-04-27T12:48:19Z" finished-at="2017-04-27T12:48:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addStack -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-27T12:48:19Z" finished-at="2017-04-27T12:48:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="21" started-at="2017-04-27T12:48:19Z" finished-at="2017-04-27T12:48:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getAvailableCards()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="getAvailableCards" duration-ms="21" started-at="2017-04-27T12:48:19Z" finished-at="2017-04-27T12:48:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAvailableCards -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="44" started-at="2017-04-27T12:48:19Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-27T12:48:19Z" finished-at="2017-04-27T12:48:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="getBottom()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="getBottom" duration-ms="5" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBottom -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="19" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getCardAtLocationint()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="getCardAtLocationint" duration-ms="6" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCardAtLocationint -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="32" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getStackCard()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="getStackCard" duration-ms="16" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStackCard -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="20" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getStackint()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="getStackint" duration-ms="8" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStackint -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="62" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="isEmpty()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="isEmpty" duration-ms="5" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isEmpty -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="13" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="length()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="length" duration-ms="2" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- length -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="30" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="peek()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="peek" duration-ms="6" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- peek -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="pop()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="pop" duration-ms="26" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pop -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="19" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="popCardStack()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="popCardStack" duration-ms="6" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- popCardStack -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="3" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="32" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="pushCard()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="pushCard" duration-ms="3" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pushCard -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="22" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="pushCardStack()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="pushCardStack" duration-ms="11" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pushCardStack -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="beforeMethod" is-config="true" duration-ms="94" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="search()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="search" duration-ms="4" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testNG.CardStackTest@2a3b5b47]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testNG.CardStackTest -->
+      <class name="testNG.CardTest">
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@10e31a9a]" name="color" duration-ms="8" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@1283bb96]" name="color" duration-ms="3" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@130d63be]" name="color" duration-ms="4" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@131774fe]" name="color" duration-ms="50" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@158d2680]" name="color" duration-ms="4" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@1623b78d]" name="color" duration-ms="2" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@16d04d3d]" name="color" duration-ms="2" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@1a482e36]" name="color" duration-ms="2" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@1b7cc17c]" name="color" duration-ms="3" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@1bd4fdd]" name="color" duration-ms="7" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@1d2adfbe]" name="color" duration-ms="2" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@223191a6]" name="color" duration-ms="14" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@223d2c72]" name="color" duration-ms="39" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@293a5bf6]" name="color" duration-ms="16" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@2b662a77]" name="color" duration-ms="2" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@2f9f7dcf]" name="color" duration-ms="18" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@35e2d654]" name="color" duration-ms="5" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@36902638]" name="color" duration-ms="2" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@36bc55de]" name="color" duration-ms="3" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@3febb011]" name="color" duration-ms="4" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@42a48628]" name="color" duration-ms="3" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@436813f3]" name="color" duration-ms="99" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@4550bb58]" name="color" duration-ms="3" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@49139829]" name="color" duration-ms="1" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@49ec71f8]" name="color" duration-ms="6" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@4ec4f3a0]" name="color" duration-ms="2" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@4efbca5a]" name="color" duration-ms="5" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@4f83df68]" name="color" duration-ms="4" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@55183b20]" name="color" duration-ms="2" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@564fabc8]" name="color" duration-ms="2" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@57a3af25]" name="color" duration-ms="1" started-at="2017-04-27T12:48:20Z" finished-at="2017-04-27T12:48:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@59662a0b]" name="color" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@5b8dfcc1]" name="color" duration-ms="1" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@5c33f1a9]" name="color" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@6069db50]" name="color" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@67c27493]" name="color" duration-ms="1" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@6adbc9d]" name="color" duration-ms="1" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@6aeb35e6]" name="color" duration-ms="1" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@6cf0e0ba]" name="color" duration-ms="1" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@72967906]" name="color" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@747ddf94]" name="color" duration-ms="55" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@74f0ea28]" name="color" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@74fe5c40]" name="color" duration-ms="1" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@77847718]" name="color" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@77fbd92c]" name="color" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@7d8995e]" name="color" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@7f0eb4b4]" name="color" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@7f3b84b8]" name="color" duration-ms="7" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@8f4ea7c]" name="color" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@9597028]" name="color" duration-ms="3" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@c8c12ac]" name="color" duration-ms="1" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="color()[pri:0, instance:testNG.CardTest@f6efaab]" name="color" duration-ms="4" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- color -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@10e31a9a]" name="equals" duration-ms="3" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@1283bb96]" name="equals" duration-ms="12" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@130d63be]" name="equals" duration-ms="1" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@131774fe]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@158d2680]" name="equals" duration-ms="3" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@1623b78d]" name="equals" duration-ms="3" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@16d04d3d]" name="equals" duration-ms="4" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@1a482e36]" name="equals" duration-ms="3" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@1b7cc17c]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@1bd4fdd]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@1d2adfbe]" name="equals" duration-ms="4" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@223191a6]" name="equals" duration-ms="122" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@223d2c72]" name="equals" duration-ms="1" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@293a5bf6]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@2b662a77]" name="equals" duration-ms="25" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@2f9f7dcf]" name="equals" duration-ms="8" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@35e2d654]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@36902638]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@36bc55de]" name="equals" duration-ms="4" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@3febb011]" name="equals" duration-ms="1" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@42a48628]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@436813f3]" name="equals" duration-ms="1" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@4550bb58]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@49139829]" name="equals" duration-ms="5" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@49ec71f8]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@4ec4f3a0]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@4efbca5a]" name="equals" duration-ms="1" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@4f83df68]" name="equals" duration-ms="3" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@55183b20]" name="equals" duration-ms="4" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@564fabc8]" name="equals" duration-ms="5" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@57a3af25]" name="equals" duration-ms="4" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@59662a0b]" name="equals" duration-ms="4" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@5b8dfcc1]" name="equals" duration-ms="1" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@5c33f1a9]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@6069db50]" name="equals" duration-ms="3" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@67c27493]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@6adbc9d]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:21Z" finished-at="2017-04-27T12:48:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@6aeb35e6]" name="equals" duration-ms="4" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@6cf0e0ba]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@72967906]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@747ddf94]" name="equals" duration-ms="7" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@74f0ea28]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@74fe5c40]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@77847718]" name="equals" duration-ms="1" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@77fbd92c]" name="equals" duration-ms="6" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@7d8995e]" name="equals" duration-ms="8" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@7f0eb4b4]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@7f3b84b8]" name="equals" duration-ms="2" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@8f4ea7c]" name="equals" duration-ms="1" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@9597028]" name="equals" duration-ms="1" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@c8c12ac]" name="equals" duration-ms="3" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="equals()[pri:0, instance:testNG.CardTest@f6efaab]" name="equals" duration-ms="3" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- equals -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@10e31a9a]" name="getNumber" duration-ms="4" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@1283bb96]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@130d63be]" name="getNumber" duration-ms="4" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@131774fe]" name="getNumber" duration-ms="1" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@158d2680]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@1623b78d]" name="getNumber" duration-ms="42" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@16d04d3d]" name="getNumber" duration-ms="12" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@1a482e36]" name="getNumber" duration-ms="60" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@1b7cc17c]" name="getNumber" duration-ms="7" started-at="2017-04-27T12:48:22Z" finished-at="2017-04-27T12:48:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@1bd4fdd]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@1d2adfbe]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@223191a6]" name="getNumber" duration-ms="1" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@223d2c72]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@293a5bf6]" name="getNumber" duration-ms="1" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@2b662a77]" name="getNumber" duration-ms="174" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@2f9f7dcf]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@35e2d654]" name="getNumber" duration-ms="70" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@36902638]" name="getNumber" duration-ms="1" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@36bc55de]" name="getNumber" duration-ms="3" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@3febb011]" name="getNumber" duration-ms="3" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@42a48628]" name="getNumber" duration-ms="3" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@436813f3]" name="getNumber" duration-ms="3" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@4550bb58]" name="getNumber" duration-ms="1" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@49139829]" name="getNumber" duration-ms="1" started-at="2017-04-27T12:48:23Z" finished-at="2017-04-27T12:48:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@49ec71f8]" name="getNumber" duration-ms="5" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@4ec4f3a0]" name="getNumber" duration-ms="6" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@4efbca5a]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@4f83df68]" name="getNumber" duration-ms="6" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@55183b20]" name="getNumber" duration-ms="3" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@564fabc8]" name="getNumber" duration-ms="5" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@57a3af25]" name="getNumber" duration-ms="10" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@59662a0b]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@5b8dfcc1]" name="getNumber" duration-ms="1" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@5c33f1a9]" name="getNumber" duration-ms="3" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@6069db50]" name="getNumber" duration-ms="7" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@67c27493]" name="getNumber" duration-ms="63" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@6adbc9d]" name="getNumber" duration-ms="3" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@6aeb35e6]" name="getNumber" duration-ms="5" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@6cf0e0ba]" name="getNumber" duration-ms="1" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@72967906]" name="getNumber" duration-ms="1" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@747ddf94]" name="getNumber" duration-ms="3" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@74f0ea28]" name="getNumber" duration-ms="3" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@74fe5c40]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@77847718]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@77fbd92c]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@7d8995e]" name="getNumber" duration-ms="649" started-at="2017-04-27T12:48:24Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@7f0eb4b4]" name="getNumber" duration-ms="4" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@7f3b84b8]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@8f4ea7c]" name="getNumber" duration-ms="18" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@9597028]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@c8c12ac]" name="getNumber" duration-ms="3" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getNumber()[pri:0, instance:testNG.CardTest@f6efaab]" name="getNumber" duration-ms="2" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNumber -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@10e31a9a]" name="getSuit" duration-ms="5" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@1283bb96]" name="getSuit" duration-ms="3" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@130d63be]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@131774fe]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@158d2680]" name="getSuit" duration-ms="5" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@1623b78d]" name="getSuit" duration-ms="3" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@16d04d3d]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@1a482e36]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@1b7cc17c]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@1bd4fdd]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@1d2adfbe]" name="getSuit" duration-ms="3" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@223191a6]" name="getSuit" duration-ms="4" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@223d2c72]" name="getSuit" duration-ms="5" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@293a5bf6]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@2b662a77]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@2f9f7dcf]" name="getSuit" duration-ms="301" started-at="2017-04-27T12:48:25Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@35e2d654]" name="getSuit" duration-ms="3" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@36902638]" name="getSuit" duration-ms="5" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@36bc55de]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@3febb011]" name="getSuit" duration-ms="3" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@42a48628]" name="getSuit" duration-ms="3" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@436813f3]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@4550bb58]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@49139829]" name="getSuit" duration-ms="3" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@49ec71f8]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@4ec4f3a0]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@4efbca5a]" name="getSuit" duration-ms="3" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@4f83df68]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@55183b20]" name="getSuit" duration-ms="3" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@564fabc8]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@57a3af25]" name="getSuit" duration-ms="27" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@59662a0b]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@5b8dfcc1]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@5c33f1a9]" name="getSuit" duration-ms="3" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@6069db50]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@67c27493]" name="getSuit" duration-ms="4" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@6adbc9d]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@6aeb35e6]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@6cf0e0ba]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@72967906]" name="getSuit" duration-ms="185" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@747ddf94]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@74f0ea28]" name="getSuit" duration-ms="3" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@74fe5c40]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@77847718]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@77fbd92c]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@7d8995e]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@7f0eb4b4]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@7f3b84b8]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@8f4ea7c]" name="getSuit" duration-ms="1" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@9597028]" name="getSuit" duration-ms="5" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@c8c12ac]" name="getSuit" duration-ms="2" started-at="2017-04-27T12:48:26Z" finished-at="2017-04-27T12:48:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="getSuit()[pri:0, instance:testNG.CardTest@f6efaab]" name="getSuit" duration-ms="106" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuit -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@10e31a9a]" name="isFaceUp" duration-ms="6" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@1283bb96]" name="isFaceUp" duration-ms="9" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@130d63be]" name="isFaceUp" duration-ms="33" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@131774fe]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@158d2680]" name="isFaceUp" duration-ms="5" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@1623b78d]" name="isFaceUp" duration-ms="7" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@16d04d3d]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@1a482e36]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@1b7cc17c]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@1bd4fdd]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@1d2adfbe]" name="isFaceUp" duration-ms="3" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@223191a6]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@223d2c72]" name="isFaceUp" duration-ms="4" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@293a5bf6]" name="isFaceUp" duration-ms="14" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@2b662a77]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@2f9f7dcf]" name="isFaceUp" duration-ms="3" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@35e2d654]" name="isFaceUp" duration-ms="3" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@36902638]" name="isFaceUp" duration-ms="3" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@36bc55de]" name="isFaceUp" duration-ms="106" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@3febb011]" name="isFaceUp" duration-ms="3" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@42a48628]" name="isFaceUp" duration-ms="3" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@436813f3]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@4550bb58]" name="isFaceUp" duration-ms="3" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@49139829]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@49ec71f8]" name="isFaceUp" duration-ms="1" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@4ec4f3a0]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@4efbca5a]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@4f83df68]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@55183b20]" name="isFaceUp" duration-ms="117" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@564fabc8]" name="isFaceUp" duration-ms="4" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@57a3af25]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@59662a0b]" name="isFaceUp" duration-ms="4" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@5b8dfcc1]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@5c33f1a9]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@6069db50]" name="isFaceUp" duration-ms="3" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@67c27493]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@6adbc9d]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@6aeb35e6]" name="isFaceUp" duration-ms="1" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@6cf0e0ba]" name="isFaceUp" duration-ms="8" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@72967906]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@747ddf94]" name="isFaceUp" duration-ms="5" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@74f0ea28]" name="isFaceUp" duration-ms="76" started-at="2017-04-27T12:48:27Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@74fe5c40]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@77847718]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@77fbd92c]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@7d8995e]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@7f0eb4b4]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@7f3b84b8]" name="isFaceUp" duration-ms="3" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@8f4ea7c]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@9597028]" name="isFaceUp" duration-ms="1" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@c8c12ac]" name="isFaceUp" duration-ms="2" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isFaceUp()[pri:0, instance:testNG.CardTest@f6efaab]" name="isFaceUp" duration-ms="1" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFaceUp -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@10e31a9a]" name="isHighlighted" duration-ms="86" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@1283bb96]" name="isHighlighted" duration-ms="3" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@130d63be]" name="isHighlighted" duration-ms="1" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@131774fe]" name="isHighlighted" duration-ms="2" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@158d2680]" name="isHighlighted" duration-ms="5" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@1623b78d]" name="isHighlighted" duration-ms="5" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@16d04d3d]" name="isHighlighted" duration-ms="59" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@1a482e36]" name="isHighlighted" duration-ms="5" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@1b7cc17c]" name="isHighlighted" duration-ms="4" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@1bd4fdd]" name="isHighlighted" duration-ms="4" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@1d2adfbe]" name="isHighlighted" duration-ms="58" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@223191a6]" name="isHighlighted" duration-ms="5" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@223d2c72]" name="isHighlighted" duration-ms="2" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@293a5bf6]" name="isHighlighted" duration-ms="6" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@2b662a77]" name="isHighlighted" duration-ms="3" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@2f9f7dcf]" name="isHighlighted" duration-ms="14" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@35e2d654]" name="isHighlighted" duration-ms="2" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@36902638]" name="isHighlighted" duration-ms="2" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@36bc55de]" name="isHighlighted" duration-ms="240" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@3febb011]" name="isHighlighted" duration-ms="5" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@42a48628]" name="isHighlighted" duration-ms="104" started-at="2017-04-27T12:48:28Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@436813f3]" name="isHighlighted" duration-ms="3" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@4550bb58]" name="isHighlighted" duration-ms="4" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@49139829]" name="isHighlighted" duration-ms="6" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@49ec71f8]" name="isHighlighted" duration-ms="5" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@4ec4f3a0]" name="isHighlighted" duration-ms="3" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@4efbca5a]" name="isHighlighted" duration-ms="8" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@4f83df68]" name="isHighlighted" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@55183b20]" name="isHighlighted" duration-ms="4" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@564fabc8]" name="isHighlighted" duration-ms="5" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@57a3af25]" name="isHighlighted" duration-ms="6" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@59662a0b]" name="isHighlighted" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@5b8dfcc1]" name="isHighlighted" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@5c33f1a9]" name="isHighlighted" duration-ms="5" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@6069db50]" name="isHighlighted" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@67c27493]" name="isHighlighted" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@6adbc9d]" name="isHighlighted" duration-ms="9" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@6aeb35e6]" name="isHighlighted" duration-ms="6" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@6cf0e0ba]" name="isHighlighted" duration-ms="4" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@72967906]" name="isHighlighted" duration-ms="8" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@747ddf94]" name="isHighlighted" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@74f0ea28]" name="isHighlighted" duration-ms="94" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@74fe5c40]" name="isHighlighted" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@77847718]" name="isHighlighted" duration-ms="1" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@77fbd92c]" name="isHighlighted" duration-ms="1" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@7d8995e]" name="isHighlighted" duration-ms="7" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@7f0eb4b4]" name="isHighlighted" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@7f3b84b8]" name="isHighlighted" duration-ms="3" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@8f4ea7c]" name="isHighlighted" duration-ms="10" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@9597028]" name="isHighlighted" duration-ms="5" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@c8c12ac]" name="isHighlighted" duration-ms="9" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isHighlighted()[pri:0, instance:testNG.CardTest@f6efaab]" name="isHighlighted" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isHighlighted -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@10e31a9a]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@1283bb96]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@130d63be]" name="isValidSuit" duration-ms="6" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@131774fe]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@158d2680]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@1623b78d]" name="isValidSuit" duration-ms="3" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@16d04d3d]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@1a482e36]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@1b7cc17c]" name="isValidSuit" duration-ms="4" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@1bd4fdd]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@1d2adfbe]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@223191a6]" name="isValidSuit" duration-ms="0" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@223d2c72]" name="isValidSuit" duration-ms="59" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@293a5bf6]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@2b662a77]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@2f9f7dcf]" name="isValidSuit" duration-ms="8" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@35e2d654]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@36902638]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@36bc55de]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@3febb011]" name="isValidSuit" duration-ms="3" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@42a48628]" name="isValidSuit" duration-ms="44" started-at="2017-04-27T12:48:29Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@436813f3]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@4550bb58]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@49139829]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@49ec71f8]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@4ec4f3a0]" name="isValidSuit" duration-ms="3" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@4efbca5a]" name="isValidSuit" duration-ms="10" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@4f83df68]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@55183b20]" name="isValidSuit" duration-ms="5" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@564fabc8]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@57a3af25]" name="isValidSuit" duration-ms="7" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@59662a0b]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@5b8dfcc1]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@5c33f1a9]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@6069db50]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@67c27493]" name="isValidSuit" duration-ms="46" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@6adbc9d]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@6aeb35e6]" name="isValidSuit" duration-ms="91" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@6cf0e0ba]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@72967906]" name="isValidSuit" duration-ms="5" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@747ddf94]" name="isValidSuit" duration-ms="4" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@74f0ea28]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@74fe5c40]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@77847718]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@77fbd92c]" name="isValidSuit" duration-ms="5" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@7d8995e]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@7f0eb4b4]" name="isValidSuit" duration-ms="2" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@7f3b84b8]" name="isValidSuit" duration-ms="5" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@8f4ea7c]" name="isValidSuit" duration-ms="3" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@9597028]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@c8c12ac]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+        <test-method status="PASS" signature="isValidSuit()[pri:0, instance:testNG.CardTest@f6efaab]" name="isValidSuit" duration-ms="1" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isValidSuit -->
+      </class> <!-- testNG.CardTest -->
+      <class name="testNG.DeckTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.DeckTest@58ea606c]" name="beforeMethod" is-config="true" duration-ms="332" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getDeck()[pri:0, instance:testNG.DeckTest@58ea606c]" name="getDeck" duration-ms="1" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDeck -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.DeckTest@4de8b406]" name="beforeMethod" is-config="true" duration-ms="1843" started-at="2017-04-13T16:28:31Z" finished-at="2017-04-13T16:28:32Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.DeckTest@58ea606c]" name="beforeMethod" is-config="true" duration-ms="177" started-at="2017-04-27T12:48:30Z" finished-at="2017-04-27T12:48:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getDeckLinkedListInteger()[pri:0, instance:test.DeckTest@4de8b406]" name="getDeckLinkedListInteger" duration-ms="32" started-at="2017-04-13T16:28:32Z" finished-at="2017-04-13T16:28:32Z">
+        <test-method status="PASS" signature="getDeckLinkedListInteger()[pri:0, instance:testNG.DeckTest@58ea606c]" name="getDeckLinkedListInteger" duration-ms="10" started-at="2017-04-27T12:48:31Z" finished-at="2017-04-27T12:48:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDeckLinkedListInteger -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.DeckTest@4de8b406]" name="beforeMethod" is-config="true" duration-ms="1531" started-at="2017-04-13T16:28:32Z" finished-at="2017-04-13T16:28:34Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testNG.DeckTest@58ea606c]" name="beforeMethod" is-config="true" duration-ms="173" started-at="2017-04-27T12:48:31Z" finished-at="2017-04-27T12:48:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="shuffle()[pri:0, instance:test.DeckTest@4de8b406]" name="shuffle" duration-ms="10" started-at="2017-04-13T16:28:34Z" finished-at="2017-04-13T16:28:34Z">
+        <test-method status="PASS" signature="shuffle()[pri:0, instance:testNG.DeckTest@58ea606c]" name="shuffle" duration-ms="2" started-at="2017-04-27T12:48:31Z" finished-at="2017-04-27T12:48:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shuffle -->
-      </class> <!-- test.DeckTest -->
+      </class> <!-- testNG.DeckTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
