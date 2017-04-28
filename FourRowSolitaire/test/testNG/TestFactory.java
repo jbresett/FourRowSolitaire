@@ -1,7 +1,6 @@
-package testNG;
+package test.testNG;
 
 import org.testng.annotations.Factory;
-import FourRowSolitaire.Card;
 
 public class TestFactory {
 	  
@@ -32,6 +31,13 @@ public class TestFactory {
 	  public Object[] dealDeckTest() {
 	    Object[] result = new Object[1];
 	    //result[0] = new DealDeckTest();
+	    return result;
+	  }
+	  
+	  //@Factory // Unit Test Integration
+	  public Object[] unitTests() {
+	    Object[] result = new Object[0];
+	    //result[0] = new FourRowSolitaireTestSuite();
 	    return result;
 	  }	  
 

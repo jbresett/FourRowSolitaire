@@ -2,7 +2,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>FourRowSolitaire</groupId>
   <artifactId>FourRowSolitaire</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <name>Four Row Solitaire</name>
   <build>
     <sourceDirectory>FourRowSolitaire/src</sourceDirectory>
@@ -22,13 +21,18 @@
     </resources>
     <plugins>
       <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.5.1</version>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
         <configuration>
-          <source/>
-          <target/>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>FourRowSolitaire.FourRowSolitaire</mainClass>
+            </manifest>
+          </archive>
         </configuration>
       </plugin>
+
 	  <plugin>
 	   <groupId>org.codehaus.mojo</groupId>
 	   <artifactId>exec-maven-plugin</artifactId>
@@ -50,4 +54,13 @@
 	       
     </plugins>
   </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.testng</groupId>
+  		<artifactId>testng</artifactId>
+  		<version>6.8</version>
+  		<scope>test</scope>
+  	</dependency>
+  </dependencies>
+  <version>Final</version>
 </project>

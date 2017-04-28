@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="test.testNG.CardTest">
+        <methods>
+          <include name="isValidSuit"/>
+          <include name="getNumber"/>
+          <include name="isHighlighted"/>
+          <include name="color"/>
+          <include name="isFaceUp"/>
+          <include name="equals"/>
+          <include name="getSuit"/>
+        </methods>
+      </class> <!-- test.testNG.CardTest -->
+      <class name="test.testNG.CardStackTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- test.testNG.CardStackTest -->
+      <class name="test.testNG.DeckTest">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- test.testNG.DeckTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
